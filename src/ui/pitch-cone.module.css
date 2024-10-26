@@ -1,0 +1,90 @@
+.ml1-MatchLiveSoccerModule_ConeContainer {
+    position: absolute;
+    width: auto;
+    inset: 3% 3.5%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.ml1-MatchLiveSoccerModule_ConeAsset {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    transform: translateY(-50%) rotate(45deg);
+    /*FIREFOX BUG -> remove goal post on overlay*/
+    /*mix-blend-mode: overlay;*/
+}
+
+.ml1-MatchLiveSoccerModule_ConeComponent {
+    transform-origin: left center;
+    visibility: hidden;
+}
+
+@keyframes expandConeOuter {
+    0% {
+        transform: scale(0);
+        opacity: .3;
+    }
+    20% {
+        transform: scale(1);
+        opacity: .3;
+    }
+    100% {
+        transform: scale(.9);
+        opacity: 0;
+    }
+}
+
+.ml1-MatchLiveSoccerModule_ConeOuter {
+    animation-name: expandConeOuter;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: left center;
+}
+
+@keyframes expandConeMid {
+    0% {
+        transform: scale(0);
+        opacity: .5;
+    }
+    20% {
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(.9);
+        opacity: 0;
+    }
+}
+
+.ml1-MatchLiveSoccerModule_ConeMid {
+    animation-name: expandConeMid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: left center;
+}
+
+
+@keyframes expandConeInner {
+    0% {
+        transform: scale(0);
+        opacity: .7;
+    }
+    20% {
+        transform: scale(1);
+        opacity: .7;
+    }
+    100% {
+        transform: scale(.9);
+        opacity: 0;
+    }
+}
+
+.ml1-MatchLiveSoccerModule_ConeInner {
+    animation-name: expandConeInner;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: left center;
+}

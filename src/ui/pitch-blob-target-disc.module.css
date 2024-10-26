@@ -1,0 +1,29 @@
+.ml1-XYBlob_TargetDisc {
+    position: absolute;
+    background: var(--ml1-XYBlobColor);
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 50%;
+    transition: opacity .2s;
+    transform-origin: center;
+}
+
+
+@keyframes XYBlobSpin {
+    0% {
+        transform: scale(2);
+    }
+    20% {
+        transform: none;
+    }
+    100% {
+        transform: scale(2);
+    }
+
+}
+
+.ml1-XYBlob-pulse {
+    animation: XYBlobSpin 2s infinite cubic-bezier(.5,.25,.5,.75);
+}

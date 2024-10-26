@@ -1,0 +1,141 @@
+.ml1-SoccerScoreUpdate {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.ml1-SoccerScoreUpdate_OuterWrapper {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    align-items: stretch;
+    justify-content: center;
+    transform: translate(-50%);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translate(-100%);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.ml1-SoccerScoreUpdate_ScoreWrapper-animate1 {
+    animation: .2s ease 0s 1 normal forwards running slideInFromLeft, .2s ease 3s reverse slideInFromLeft;
+    animation-fill-mode: forwards;
+}
+
+.ml1-SoccerScoreUpdate_ScoreWrapper-score1 {
+    padding-right: 10px;
+    padding-left: 0;
+    justify-content: flex-end;
+    background-color: var(--ml1-scoresTeam1Color);
+    transform: translate(-100%);
+}
+
+.ml1-SoccerScoreUpdate_ScoreWrapper {
+    display: flex;
+    flex: 1 1 50%;
+    padding-left: 10px;
+    align-items: center;
+}
+
+@keyframes rollNumberOriginal {
+    0% {
+        transform: none;
+        opacity: .9;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: .5;
+    }
+}
+
+.ml1-SoccerScoreUpdate_ScoreOriginal-animate {
+    animation: rollNumberOriginal 1s 1s both ease-in-out;
+}
+
+.ml1-SoccerScoreUpdate_ScoreOriginal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff;
+}
+
+.ml1-SoccerScoreUpdate_ScoreNew {
+    /*transform: translateY(100%);*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff;
+}
+
+@keyframes rollNumberNew {
+    0% {
+        transform: translateY(100%);
+        opacity: .5;
+    }
+    100% {
+        transform: none;
+        opacity: .9;
+    }
+}
+
+.ml1-SoccerScoreUpdate_ScoreNew-animate {
+    animation: rollNumberNew 1s 1s both ease-in-out;
+}
+
+.ml1-SoccerScoreUpdate_ScoreWrapper:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(270deg, #000 0, #ccc 33.333333%, #000 66.666666%, #ccc);
+    mix-blend-mode: multiply;
+    opacity: .5;
+    z-index: -1;
+    background-size: 300% 100%;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translate(100%);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.ml1-SoccerScoreUpdate_ScoreWrapper-animate2 {
+    animation: .2s ease 0s 1 normal forwards running slideInFromRight, .2s ease 3s reverse slideInFromRight;
+    animation-fill-mode: forwards;
+}
+
+.ml1-SoccerScoreUpdate_ScoreWrapper-score2 {
+    transform: translate(100%);
+    background-color: var(--ml1-scoresTeam2Color);
+}

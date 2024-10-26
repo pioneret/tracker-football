@@ -1,0 +1,13 @@
+.ml1-MatchLiveSoccerModule_EventsInfoRow {
+    width: 100%;
+    height: 45px;
+    max-width: var(--ml1-lcCoverageMaxWidth, 450px);
+    position: relative;
+    margin: 0 auto;
+    background-color: transparent;
+    transition: background-color .2s ease,box-shadow .2s ease,border-color .2s ease;
+    border-bottom: 1px solid var(--ml1-green40804E);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}

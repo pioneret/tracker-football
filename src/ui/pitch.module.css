@@ -1,0 +1,6 @@
+.ml1-MatchLiveSoccerModule_SVGPitchContainer {
+    pointer-events: none;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}

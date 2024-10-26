@@ -1,0 +1,22 @@
+.ml1-MatchLiveSoccerModule_Constrainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    height: 258.125px;
+    width: 100%;
+}
+
+.ml1-MatchLiveSoccerModule_Container{
+    width: 100%;
+    max-width:  450px;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 45px;
+    align-items: center;
+    justify-content: stretch;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}

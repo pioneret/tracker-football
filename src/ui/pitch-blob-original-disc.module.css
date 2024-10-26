@@ -1,0 +1,26 @@
+.ml1-XYBlob_OriginDisc {
+    position: absolute;
+    background: var(--ml1-XYBlobColor);
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 50%;
+    transition: opacity .2s;
+    transform-origin: center;
+}
+
+
+@keyframes XYBlobSpinOriginDisc {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(0);
+        visibility: hidden;
+    }
+}
+
+.ml1-XYBlob-pulse{
+    animation: XYBlobSpinOriginDisc 1s forwards cubic-bezier(.5,.25,.5,.75);
+}

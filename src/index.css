@@ -1,0 +1,66 @@
+:root {
+    /*MLT*/
+    --ml1-lcCoverageMaxWidth: 450px;
+    --ml1-pitchPerspective: 400px;
+
+
+    /*MLT Action*/
+    --ml1-scale: .85;
+    --ml1-sceneXAdjustment: 0deg;
+    --ml1-sceneYAdjustment: 0deg;
+    --ml1-sceneZAdjustment: 0deg;
+
+    /*MLT Scene*/
+    --ml1-sceneXRotation: calc(65deg + var(--ml1-sceneXAdjustment));
+    --ml1-sceneYRotation: calc(0deg + var(--ml1-sceneYAdjustment));
+    --ml1-sceneZRotation: calc(0deg + var(--ml1-sceneZAdjustment));
+
+    --ml1-sceneXTranslate: 0px;
+    --ml1-sceneYTranslate: -5px;
+    --ml1-sceneZTranslate: 0px;
+
+    /*BLOB*/
+    /*TODO CHANGE*/
+    --ml1-XYBlobColor: white;
+    --ml1-XYBlobFontColour: black;
+    --ml1-XYBlob-PlayerTag-scale: 1;
+
+    --ml1-driftPolarity: 1;
+
+    /*BLOB BALL*/
+    --ml1-ballHeight: 0px;
+    --ml1-ballRotation: 5000deg;
+
+    /*TEAM COLORS*/
+    --ml1-scoresTeam1Color: #2ec3d9;
+    --ml1-scoresTeam2Color: #c00101;
+
+    --ml1-animation-duration: 5s;
+    --ml1-wipe-color: #2ec3d9;
+    --ml1-icon-color: #2ec3d9;
+    --ml1-team-subtext-color: #2ec3d9;
+
+    --ml1-grey15p: rgba(0, 0, 0, .15);
+    --ml1-grey30p: rgba(0, 0, 0, .3);
+    --ml1-statgrey: #9c9c9c;
+    --ml1-statgreen: #00e099;
+    --ml1-whitef0: #f0f0f0;
+    --ml1-green1b4d42: #1b4d42;
+    --ml1-XYBlob-goalColor: #28ffbb;
+    --ml1-green-126e51: #126e51;
+    --ml1-green2c4030: #2c4030;
+    --ml1-color-greenA6FFBA: #a6ffba;
+    --ml1-coneColour: #26ff9a;
+    --ml1-team1Color: #fff;
+    --ml1-team2Color: #000;
+    --ml1-eventcard-bg: linear-gradient(180deg, #2f5434, #202721);
+    --ml1-color-subOnPlayer: #a6ffba;
+    --color-green47763D: #47763d;
+    --color-green406D37: #406d37;
+    --color-green193920: #193920;
+    --color-greenA6FFBA: #a6ffba;
+    --ml1-green40804E: #40804e;
+    --ml1-green26FF9A: #26ff9a;
+    --ml1-animationOutlineText1: hsla(0, 0%, 100%, .9);
+    --ml1-animationOutlineText2: hsla(0, 0%, 100%, .45);
+}

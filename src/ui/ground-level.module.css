@@ -1,0 +1,9 @@
+.ml1-MatchLiveSoccerModule_GroundLevel {
+    transform: rotateX(var(--ml1-sceneXRotation)) rotateY(var(--ml1-sceneYRotation)) rotate(var(--ml1-sceneZRotation)) scaleY(2);
+    transform-style: preserve-3d;
+    position: absolute;
+    inset: -22px;
+    background: radial-gradient(farthest-corner,var(--ml1-green2c4030) 0,transparent);
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2);
+}

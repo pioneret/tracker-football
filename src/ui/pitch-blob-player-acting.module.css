@@ -1,0 +1,36 @@
+.ml1-XYBlob_PlayerActing::after {
+    content: "";
+    background: var(--ml1-XYBlobColor);
+    width: 10px;
+    height: 10px;
+    bottom: -3px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.ml1-XYBlob_PlayerActing:empty {
+    display: none;
+}
+
+.ml1-XYBlob_PlayerActing {
+    font-size: 12px;
+    font-weight: 700;
+    --ml1-XYBlob-Player-rotateX: calc(-90.01deg - var(--ml1-sceneXAdjustment, 0deg));
+    --ml1-XYBlob-Player-rotateY: calc(var(--ml1-sceneZAdjustment, 0deg) * 1);
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -22px, 20px) rotateX(var(--ml1-XYBlob-Player-rotateX)) rotateY(var(--ml1-XYBlob-Player-rotateY)) scale(var(--ml1-XYBlob-PlayerTag-scale));
+    transform-origin: center bottom;
+    position: absolute;
+    padding: 0 7px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 5px;
+    opacity: .9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: var(--ml1-XYBlobColor);
+    color: var(--ml1-XYBlobFontColour);
+}

@@ -1,0 +1,21 @@
+@keyframes exposeLine {
+    0% {
+        -webkit-clip-path: circle(0 at 0 0);
+        clip-path: circle(0 at 0 0);
+    }
+    100% {
+        -webkit-clip-path: circle(var(--ml1-line-distance) at 0 0);
+        clip-path: circle(var(--ml1-line-distance) at 0 0);
+    }
+}
+
+.ml1-XYBlob_GoalLine {
+    position: absolute;
+    --ml1-line-gradient: #c9ff7d;
+    --ml1-line-distance: 0px;
+    height: 2px;
+    background: linear-gradient(90deg,transparent 6px,var(--ml1-line-gradient) 0,var(--ml1-line-gradient) var(--ml1-line-distance));
+    width: var(--ml1-line-distance);
+    transform-origin: center left;
+    animation: exposeLine .7s forwards cubic-bezier(.37,0,.36,1);
+}

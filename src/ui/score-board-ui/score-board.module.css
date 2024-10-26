@@ -1,0 +1,63 @@
+.lsb-LiteScoreboardModule-wrapper {
+    width: 100%;
+    height: 51px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.lsb-LiteScoreboardModule {
+    background-color: #282828;
+    height: 50px;
+    width: 100%;
+}
+.lsb-ScoreBasedScoreboardAggregate {
+    display: flex;
+    height: 100%;
+}
+
+.lsb-ScoreBasedScoreboardAggregate_TeamContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+    min-width: 0;
+}
+
+
+.lsb-ScoreBasedScoreboardAggregate_TeamName-normal {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    word-break: break-word;
+    word-wrap: break-word;
+    line-height: 15px;
+    max-height: calc(15px * 3);
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.lsb-ScoreBasedScoreboardAggregate_ScoreContainer {
+    display: flex;
+    flex: 0 1 auto;
+}
+
+.lsb-ScoreBasedScoreboardAggregate_TeamScoreContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50px;
+    padding: 0 5px;
+}
+
+.lsb-ScoreBasedScoreboardAggregate_TeamScore {
+    color: #ffde00;
+    font-weight: 900;
+    white-space: nowrap;
+    line-height: 26px;
+    font-size: 22px;
+}

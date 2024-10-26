@@ -1,0 +1,7 @@
+.ml1-XYBlob {
+    position: absolute;
+    opacity: 0;
+    z-index: 40;
+    transform-style: preserve-3d;
+    inset: 3% 3.5%;
+}
