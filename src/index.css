@@ -66,4 +66,5 @@
     --color-green28FFBB: color(display-p3 .157 1 .773);
     --ml1-borderColour: color(display-p3 .157 1 .733);
     --ml1-standardHeight: 258.125px;
+    --ml1-event-top-distance: 80px;
 }

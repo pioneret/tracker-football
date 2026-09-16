@@ -32,7 +32,7 @@ export default function MatchLiveTrackerUI({
                         isEventInfoFixed
                             ? {
                                   position: "fixed",
-                                  top: "80px",
+                                  top: "var(--ml1-event-top-distance)",
                                   zIndex: 10,
                                   backgroundColor: "#1f1f1f",
                                   borderBottom: "0px",
