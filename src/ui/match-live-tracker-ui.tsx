@@ -1,7 +1,7 @@
 "use client"
 
 import { MltsContext } from "../context/mlts-context"
-import styles from "match-live-tracker-ui.module.css"
+import styles from "./match-live-tracker-ui.module.css"
 import SoccerActionCenter from "./soccer-action-center"
 import EventCardContainer from "./event-card-container"
 import EventInfoRow from "./event-info-row"

@@ -27,7 +27,9 @@
 }
 
 .ml1-SoccerScoreUpdate_ScoreWrapper-animate1 {
-    animation: .2s ease 0s 1 normal forwards running slideInFromLeft, .2s ease 3s reverse slideInFromLeft;
+    animation:
+        0.2s ease 0s 1 normal forwards running slideInFromLeft,
+        0.2s ease 3s reverse slideInFromLeft;
     animation-fill-mode: forwards;
 }
 
@@ -49,11 +51,11 @@
 @keyframes rollNumberOriginal {
     0% {
         transform: none;
-        opacity: .9;
+        opacity: 0.9;
     }
     100% {
         transform: translateY(-100%);
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -95,11 +97,11 @@
 @keyframes rollNumberNew {
     0% {
         transform: translateY(100%);
-        opacity: .5;
+        opacity: 0.5;
     }
     100% {
         transform: none;
-        opacity: .9;
+        opacity: 0.9;
     }
 }
 
@@ -114,9 +116,15 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(270deg, #000 0, #ccc 33.333333%, #000 66.666666%, #ccc);
+    background: linear-gradient(
+        270deg,
+        #000 0,
+        #ccc 33.333333%,
+        #000 66.666666%,
+        #ccc
+    );
     mix-blend-mode: multiply;
-    opacity: .5;
+    opacity: 0.5;
     z-index: -1;
     background-size: 300% 100%;
 }
@@ -131,7 +139,9 @@
 }
 
 .ml1-SoccerScoreUpdate_ScoreWrapper-animate2 {
-    animation: .2s ease 0s 1 normal forwards running slideInFromRight, .2s ease 3s reverse slideInFromRight;
+    animation:
+        0.2s ease 0s 1 normal forwards running slideInFromRight,
+        0.2s ease 3s reverse slideInFromRight;
     animation-fill-mode: forwards;
 }
 

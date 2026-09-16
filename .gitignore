@@ -25,5 +25,7 @@ yarn-error.log*
 # rollup
 .rollup.cache
 
-#storybook
-.storybook
+# storybook
+storybook-static
+# build caches
+.types-cache

@@ -3,9 +3,8 @@
     --ml1-lcCoverageMaxWidth: 450px;
     --ml1-pitchPerspective: 400px;
 
-
     /*MLT Action*/
-    --ml1-scale: .85;
+    --ml1-scale: 0.85;
     --ml1-sceneXAdjustment: 0deg;
     --ml1-sceneYAdjustment: 0deg;
     --ml1-sceneZAdjustment: 0deg;
@@ -40,8 +39,8 @@
     --ml1-icon-color: #2ec3d9;
     --ml1-team-subtext-color: #2ec3d9;
 
-    --ml1-grey15p: rgba(0, 0, 0, .15);
-    --ml1-grey30p: rgba(0, 0, 0, .3);
+    --ml1-grey15p: rgba(0, 0, 0, 0.15);
+    --ml1-grey30p: rgba(0, 0, 0, 0.3);
     --ml1-statgrey: #9c9c9c;
     --ml1-statgreen: #00e099;
     --ml1-whitef0: #f0f0f0;
@@ -61,6 +60,6 @@
     --color-greenA6FFBA: #a6ffba;
     --ml1-green40804E: #40804e;
     --ml1-green26FF9A: #26ff9a;
-    --ml1-animationOutlineText1: hsla(0, 0%, 100%, .9);
-    --ml1-animationOutlineText2: hsla(0, 0%, 100%, .45);
+    --ml1-animationOutlineText1: hsla(0, 0%, 100%, 0.9);
+    --ml1-animationOutlineText2: hsla(0, 0%, 100%, 0.45);
 }

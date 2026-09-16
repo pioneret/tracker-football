@@ -5,7 +5,10 @@
     position: relative;
     margin: 0 auto;
     background-color: transparent;
-    transition: background-color .2s ease,box-shadow .2s ease,border-color .2s ease;
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
     border-bottom: 1px solid var(--ml1-green40804E);
     z-index: 10;
     display: flex;

@@ -23,7 +23,6 @@
     min-width: 0;
 }
 
-
 .lsb-ScoreBasedScoreboardAggregate_TeamName-normal {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -44,7 +43,7 @@
     flex: 0 1 auto;
 }
 
-.lsb-ScoreBasedScoreboardAggregate_TeamScoreContainer{
+.lsb-ScoreBasedScoreboardAggregate_TeamScoreContainer {
     display: flex;
     align-items: center;
     justify-content: center;

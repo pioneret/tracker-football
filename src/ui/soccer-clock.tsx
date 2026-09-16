@@ -1,4 +1,4 @@
-import styles from "@/packages/match-live-tracker-soccer/ui/soccer-clock.module.css"
+import styles from "./soccer-clock.module.css"
 import { MltsContext } from "../context/mlts-context"
 import { useContext } from "react"
 

@@ -19,52 +19,62 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, #000 0, #ccc 33.333333%, #000 66.666666%, #ccc);
+    background: linear-gradient(
+        90deg,
+        #000 0,
+        #ccc 33.333333%,
+        #000 66.666666%,
+        #ccc
+    );
     background-size: 300% 100%;
     mix-blend-mode: multiply;
-    opacity: .5;
+    opacity: 0.5;
     z-index: -1;
     animation: moveGradient 10s infinite linear both;
 }
-
 
 @keyframes animateInOutLeftToRight {
     0% {
         transform: translate(-100%);
         opacity: 1;
     }
-    5%, 75% {
+    5%,
+    75% {
         transform: translate(0);
         opacity: 1;
     }
-    85%, 100% {
+    85%,
+    100% {
         transform: translate(100%);
         opacity: 0;
     }
 }
 
 .ml1-WipeAnimation_Container-rightAlign {
-    animation: var(--ml1-animation-duration) cubic-bezier(.1,.85,.32,1) 0s 1 normal both running animateInOutLeftToRight;
+    animation: var(--ml1-animation-duration) cubic-bezier(0.1, 0.85, 0.32, 1) 0s
+        1 normal both running animateInOutLeftToRight;
 }
-
 
 @keyframes animateInOutRightToLeft {
     0% {
         transform: translate(100%);
         opacity: 1;
     }
-    5%, 75% {
+    5%,
+    75% {
         transform: translate(0);
         opacity: 1;
     }
-    85%, 100% {
+    85%,
+    100% {
         transform: translate(-100%);
         opacity: 0;
     }
 }
 
 .ml1-WipeAnimation_Container-leftAlign {
-    animation: var(--ml1-animation-duration) cubic-bezier(.1,.85,.32,1) 0s 1 normal both running animateInOutRightToLeft;
+    animation: var(--ml1-animation-duration) cubic-bezier(0.1, 0.85, 0.32, 1) 0s
+        1 normal both running animateInOutRightToLeft;
 }
 
 /*CHEVRONS*/
@@ -74,7 +84,7 @@
     height: 100%;
 }
 
-.ml1-WipeAnimation_Chevron{
+.ml1-WipeAnimation_Chevron {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -85,7 +95,7 @@
         transform: translate(-100%);
     }
     25% {
-         transform: translate(0);
+        transform: translate(0);
     }
     70% {
         transform: translate(-1%);
@@ -94,7 +104,6 @@
         transform: translate(100%);
     }
 }
-
 
 .ml1-WipeAnimation_Chevron-rightAlign {
     left: auto;
@@ -106,9 +115,9 @@
     mask-size: contain;
     -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='85' height='195' viewBox='0 0 85 195'%3E%3Cpath fill='{0}' fill-rule='evenodd' d='M.788 0L0 .65l82.733 96.659L0 193.989l.788.641 83.268-97.315z'/%3E%3C/svg%3E");
     mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='85' height='195' viewBox='0 0 85 195'%3E%3Cpath fill='{0}' fill-rule='evenodd' d='M.788 0L0 .65l82.733 96.659L0 193.989l.788.641 83.268-97.315z'/%3E%3C/svg%3E");
-    animation: 5s cubic-bezier(.175,.85,.32,1) 0s 1 normal both running animateChevronRightToLeft;
+    animation: 5s cubic-bezier(0.175, 0.85, 0.32, 1) 0s 1 normal both running
+        animateChevronRightToLeft;
 }
-
 
 @keyframes animateChevronLeftToRight {
     0% {
@@ -135,10 +144,9 @@
     mask-position: left;
     -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='85' height='195' viewBox='0 0 85 195'%3E%3Cpath fill='{0}' fill-rule='evenodd' d='M83.268 0l.788.65L1.323 97.309l82.733 96.68-.788.641L0 97.315z'/%3E%3C/svg%3E");
     mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='85' height='195' viewBox='0 0 85 195'%3E%3Cpath fill='{0}' fill-rule='evenodd' d='M83.268 0l.788.65L1.323 97.309l82.733 96.68-.788.641L0 97.315z'/%3E%3C/svg%3E");
-    animation: 5s cubic-bezier(.175,.85,.32,1) 0s 1 normal both running animateChevronLeftToRight;
+    animation: 5s cubic-bezier(0.175, 0.85, 0.32, 1) 0s 1 normal both running
+        animateChevronLeftToRight;
 }
-
-
 
 /*CONTENT CONTAINER*/
 .ml1-WipeAnimation_ContentContainer {
@@ -179,16 +187,16 @@
     animation: animateSlowMotionPanel-la 5s ease-out both;
 }
 
-
-
 @keyframes animateInOutText-ra {
     0% {
         transform: translate(-100%);
     }
-    10%, 75% {
+    10%,
+    75% {
         transform: translate(0);
     }
-    85%, 100% {
+    85%,
+    100% {
         transform: translate(100%);
     }
 }
@@ -196,16 +204,19 @@
     0% {
         transform: translate(100%);
     }
-    10%, 75% {
+    10%,
+    75% {
         transform: translate(0);
     }
-    85%, 100% {
+    85%,
+    100% {
         transform: translate(-100%);
     }
 }
 
 @keyframes animateInOutTextOpacity {
-    0%, 2% {
+    0%,
+    2% {
         opacity: 0;
     }
     10% {
@@ -214,11 +225,11 @@
     75% {
         opacity: 1;
     }
-    85%, 100% {
+    85%,
+    100% {
         opacity: 0;
     }
 }
-
 
 .ml1-WipeAnimation_ContentWrapper {
     position: absolute;
@@ -231,12 +242,16 @@
 
 .ml1-WipeAnimation_ContentWrapper-leftAlign {
     align-items: flex-start;
-    animation: animateInOutText-la 5s cubic-bezier(.075,.82,.165,1), animateInOutTextOpacity 5s ease;
+    animation:
+        animateInOutText-la 5s cubic-bezier(0.075, 0.82, 0.165, 1),
+        animateInOutTextOpacity 5s ease;
 }
 
 .ml1-WipeAnimation_ContentWrapper-rightAlign {
     align-items: flex-end;
-    animation: animateInOutText-ra 5s cubic-bezier(.075,.82,.165,1), animateInOutTextOpacity 5s ease;
+    animation:
+        animateInOutText-ra 5s cubic-bezier(0.075, 0.82, 0.165, 1),
+        animateInOutTextOpacity 5s ease;
 }
 
 /*TITLE*/
@@ -250,7 +265,7 @@
 }
 
 /*SUBTITLE*/
-.ml1-WipeAnimation_SubTitle{
+.ml1-WipeAnimation_SubTitle {
     font-weight: 800;
     font-size: 26px;
     line-height: 31px;
@@ -270,8 +285,6 @@
     left: -6px;
 }
 
-
-
 .ml1-WipeAnimation_Icon-var {
     background-color: var(--ml1-icon-color);
     -webkit-mask-repeat: no-repeat;
@@ -286,5 +299,3 @@
     --mixin-svg-inlined: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='40' viewBox='0 0 56 40'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath stroke='%2358E476' stroke-width='4' d='M2 2h51.5v28.5H2z'/%3E%3Cpath fill='%2358E476' d='M9 36.5h37V40H9z'/%3E%3C/g%3E%3C/svg%3E");
     mask-image: var(--mixin-svg-inlined);
 }
-
-

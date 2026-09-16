@@ -1,19 +1,23 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "ES2020",
+        "lib": ["DOM", "DOM.Iterable", "ES2020"],
         "module": "ESNext",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true,
-        "skipLibCheck": true,
-        "rootDir": ".",
+        "moduleResolution": "Bundler",
         "jsx": "react-jsx",
-        "declaration": true,
-        "declarationDir": "types",
-        "sourceMap": true,
-        "outDir": "dist",
-        "moduleResolution": "Node",
+        "strict": true,
+        "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "emitDeclarationOnly": true,
-    }
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "useDefineForClassFields": true,
+        "declaration": true,
+        "sourceMap": true,
+        "noEmit": true,
+        "rootDir": "src",
+        "types": ["css-modules"]
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist", "src/stories"]
 }

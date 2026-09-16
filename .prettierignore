@@ -26,5 +26,5 @@ yarn-error.log*
 .rollup.cache
 .gitignore
 
-#storybook
-.storybook
+# storybook
+storybook-static

@@ -11,7 +11,7 @@ export default function ScoreUpdate() {
 
     useEffect(() => {
         /*In case of GOAL wait for the GOAL Animation than show the score*/
-        let id: NodeJS.Timeout
+        let id: ReturnType<typeof setTimeout> | undefined
         if (isGoal) {
             id = setTimeout(() => {
                 setShow(true)

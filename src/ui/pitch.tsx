@@ -1,6 +1,6 @@
 import goalPostStyles from "./goal-post.module.css"
 import PitchDynamicSvg from "./pitch-dynamic-svg"
-import styles from "pitch.module.css"
+import styles from "./pitch.module.css"
 import GoalPost from "./goal-post"
 import PitchBlob from "./pitch-blob"
 import PitchCone from "./pitch-cone"

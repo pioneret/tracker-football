@@ -1,4 +1,4 @@
-import styles from "../pitch-blob-player-receiving.module.css"
+import styles from "./pitch-blob-player-receiving.module.css"
 
 export default function PitchBlobPlayerReceiving() {
     return (

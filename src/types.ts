@@ -86,7 +86,7 @@ export type MltsStateType = {
     currentScore: SoccerScoreType | null
     coneStatus: ConeStatusType
     ballOnTargetStatus: BallOnTargetStatusType
-    pitchBlobRef: React.RefObject<HTMLDivElement>
+    pitchBlobRef: React.RefObject<HTMLDivElement | null>
     soccerPath: SoccerPathType
     eventCard: EventCardType | null
     wipeAnimation: WipeAnimationType | null

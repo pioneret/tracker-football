@@ -25,14 +25,14 @@
 @keyframes expandConeOuter {
     0% {
         transform: scale(0);
-        opacity: .3;
+        opacity: 0.3;
     }
     20% {
         transform: scale(1);
-        opacity: .3;
+        opacity: 0.3;
     }
     100% {
-        transform: scale(.9);
+        transform: scale(0.9);
         opacity: 0;
     }
 }
@@ -47,14 +47,14 @@
 @keyframes expandConeMid {
     0% {
         transform: scale(0);
-        opacity: .5;
+        opacity: 0.5;
     }
     20% {
         transform: scale(1);
-        opacity: .5;
+        opacity: 0.5;
     }
     100% {
-        transform: scale(.9);
+        transform: scale(0.9);
         opacity: 0;
     }
 }
@@ -66,18 +66,17 @@
     transform-origin: left center;
 }
 
-
 @keyframes expandConeInner {
     0% {
         transform: scale(0);
-        opacity: .7;
+        opacity: 0.7;
     }
     20% {
         transform: scale(1);
-        opacity: .7;
+        opacity: 0.7;
     }
     100% {
-        transform: scale(.9);
+        transform: scale(0.9);
         opacity: 0;
     }
 }
