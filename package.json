@@ -1,6 +1,6 @@
 {
     "name": "@pioneret/tracker-football",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "A React library for real-time football match UI, featuring live ball position tracking, event display, and components for an interactive match experience.",
     "main": "./dist/index.cjs",
     "module": "./dist/index.mjs",
