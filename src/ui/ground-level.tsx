@@ -1,4 +1,4 @@
-import styles from "./ground-level.module.css"
+import styles from "../ui/ground-level.module.css"
 
 export default function GroundLevel() {
     return (

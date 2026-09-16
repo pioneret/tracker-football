@@ -1,5 +1,5 @@
-import { DEFAULT_MLTS_STATE } from "../logic/mlts-logic"
 import { TeamsColorType } from "../types"
+import { DEFAULT_MLTS_STATE } from "../logic/mlts-logic"
 
 export const TeamColorsUtils = {
     retrieve(teamsColor: TeamsColorType | null): TeamsColorType {

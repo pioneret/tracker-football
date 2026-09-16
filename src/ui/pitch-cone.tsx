@@ -1,5 +1,5 @@
 import { MltsContext } from "../context/mlts-context"
-import PitchConeUI from "./pitch-cone-ui"
+import PitchConeUI from "../ui/pitch-cone-ui"
 import React from "react"
 
 export default function PitchCone() {

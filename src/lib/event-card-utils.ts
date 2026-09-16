@@ -199,6 +199,7 @@ export const EventCardUtils = {
                 iconClass: "ml1-EventCardBase_Asset-shotongoal",
                 eventCardStyle: {
                     "--ml1-driftPolarity": "-1",
+                    "--ml1-borderColour": teamColors.home,
                 },
                 outlineStyle: {
                     backgroundColor: "transparent",
@@ -208,7 +209,7 @@ export const EventCardUtils = {
                 },
                 titleStyle: {
                     maxWidth: "101px",
-                    textAlign: "right",
+                    textAlign: "left",
                 },
                 subtitleStyle: {
                     paddingRight: "11px",
@@ -219,6 +220,9 @@ export const EventCardUtils = {
                 subtitle: teamsName.away,
                 type: "icon",
                 iconClass: "ml1-EventCardBase_Asset-shotongoal",
+                eventCardStyle: {
+                    "--ml1-borderColour": teamColors.away,
+                },
                 outlineStyle: {
                     backgroundColor: "transparent",
                 },
@@ -228,6 +232,7 @@ export const EventCardUtils = {
                 },
                 titleContainerStyle: {
                     paddingRight: 0,
+                    alignItems: "flex-start",
                 },
                 titleStyle: {
                     maxWidth: "101px",
@@ -257,7 +262,7 @@ export const EventCardUtils = {
                 },
                 titleStyle: {
                     maxWidth: "101px",
-                    textAlign: "right",
+                    textAlign: "left",
                 },
                 subtitleStyle: {
                     paddingRight: "11px",
@@ -271,12 +276,16 @@ export const EventCardUtils = {
                 outlineStyle: {
                     backgroundColor: "transparent",
                 },
+                eventCardStyle: {
+                    "--ml1-borderColour": teamColors.away,
+                },
                 wrapperStyle: {
                     gap: "15px",
                     flexDirection: "row-reverse",
                 },
                 titleContainerStyle: {
                     paddingRight: 0,
+                    alignItems: "flex-start",
                 },
                 titleStyle: {
                     maxWidth: "101px",
@@ -494,6 +503,62 @@ export const EventCardUtils = {
                 },
                 iconStyle: {
                     transform: "scaleX(-1)",
+                },
+            },
+            H_PENALTY_M: {
+                title: "Penalty Missed",
+                subtitle: teamsName.home,
+                type: "icon",
+                iconClass: "ml1-EventCardBase_Asset-shotoffgoal",
+                eventCardStyle: {
+                    "--ml1-driftPolarity": "-1",
+                    "--ml1-borderColour": teamColors.home,
+                },
+                outlineStyle: {
+                    backgroundColor: "transparent",
+                },
+                titleContainerStyle: {
+                    paddingRight: 0,
+                },
+                titleStyle: {
+                    maxWidth: "101px",
+                    textAlign: "left",
+                },
+                subtitleStyle: {
+                    paddingRight: "11px",
+                },
+            },
+            A_PENALTY_M: {
+                title: "Penalty Missed",
+                subtitle: teamsName.away,
+                type: "icon",
+                iconClass: "ml1-EventCardBase_Asset-shotoffgoal",
+                outlineStyle: {
+                    backgroundColor: "transparent",
+                },
+                eventCardStyle: {
+                    "--ml1-borderColour": teamColors.away,
+                },
+                wrapperStyle: {
+                    gap: "15px",
+                    flexDirection: "row-reverse",
+                },
+                titleContainerStyle: {
+                    paddingRight: 0,
+                    alignItems: "flex-start",
+                },
+                titleStyle: {
+                    maxWidth: "101px",
+                    textAlign: "left",
+                },
+                subtitleStyle: {
+                    paddingRight: "0",
+                    marginTop: "4px",
+                    paddingTop: "4px",
+                    textAlign: "right",
+                },
+                iconStyle: {
+                    transform: "scaleX(1)",
                 },
             },
         }

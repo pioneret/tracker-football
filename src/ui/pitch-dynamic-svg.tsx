@@ -1,10 +1,9 @@
 import { MltsContext } from "../context/mlts-context"
 import React, { useContext, useEffect } from "react"
-/*TODO*/
 import { gsap } from "gsap"
 
 export default function PitchDynamicSvg() {
-    const { teamsColors, soccerPath } = useContext(MltsContext)
+    const { teamsColors, soccerPath, pitchSvgRef } = useContext(MltsContext)
 
     useEffect(() => {
         if (!soccerPath.type) {
@@ -41,7 +40,11 @@ export default function PitchDynamicSvg() {
     }, [soccerPath.type, soccerPath.points])
 
     return (
-        <svg viewBox="0 0 1000 666" xmlns="http://www.w3.org/2000/svg">
+        <svg
+            viewBox="0 0 1000 666"
+            xmlns="http://www.w3.org/2000/svg"
+            ref={pitchSvgRef}
+        >
             <defs>
                 <radialGradient
                     cx="50%"

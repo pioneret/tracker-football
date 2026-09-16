@@ -1,4 +1,4 @@
-import styles from "./pitch-blob-ball.module.css"
+import styles from "../ui/pitch-blob-ball.module.css"
 import { MltsContext } from "../context/mlts-context"
 import React from "react"
 

@@ -29,3 +29,6 @@ yarn-error.log*
 storybook-static
 # build caches
 .types-cache
+
+# npm auth (never commit tokens)
+.npmrc

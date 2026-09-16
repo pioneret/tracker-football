@@ -1,15 +1,15 @@
-.ml1-MatchLiveSoccerModule_Constrainer {
+.ml1-MatchLiveSoccerModule_Constrainer{
     display: flex;
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    height: 258.125px;
+    height: var(--ml1-standardHeight);
     width: 100%;
 }
 
-.ml1-MatchLiveSoccerModule_Container {
+.ml1-MatchLiveSoccerModule_Container{
     width: 100%;
-    max-width: 450px;
+    max-width:  450px;
     justify-self: center;
     display: grid;
     grid-template-rows: 1fr 45px;

@@ -7,16 +7,11 @@
     border-radius: 50%;
     transform-style: preserve-3d;
     z-index: 1;
-    --ml1-XYBlob-rotateX: calc(
-        -90.01deg - var(--ml1-sceneXAdjustment, 0.01deg)
-    );
-    --ml1-XYBlob-rotateY: calc(
-        0.01deg + var(--ml1-sceneZAdjustment, 0.01deg) * 1
-    );
-    transform: translate3d(0, calc(8px * -0.5), var(--ml1-ballHeight, 0))
-        rotateX(var(--ml1-XYBlob-rotateX)) rotateY(var(--ml1-XYBlob-rotateY));
+    --ml1-XYBlob-rotateX: calc(-90.01deg - var(--ml1-sceneXAdjustment, 0.01deg));
+    --ml1-XYBlob-rotateY: calc(0.01deg + var(--ml1-sceneZAdjustment, 0.01deg) * 1);
+    transform: translate3d(0,calc(8px * -.5),var(--ml1-ballHeight,0)) rotateX(var(--ml1-XYBlob-rotateX)) rotateY(var(--ml1-XYBlob-rotateY));
     transform-origin: bottom;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0, transparent);
+    background-image: linear-gradient(0deg,rgba(0,0,0,.2) 0,transparent);
 
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

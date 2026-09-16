@@ -62,4 +62,8 @@
     --ml1-green26FF9A: #26ff9a;
     --ml1-animationOutlineText1: hsla(0, 0%, 100%, 0.9);
     --ml1-animationOutlineText2: hsla(0, 0%, 100%, 0.45);
+    --color-grey00-60p: rgba(0, 0, 0, .6);
+    --color-green28FFBB: color(display-p3 .157 1 .773);
+    --ml1-borderColour: color(display-p3 .157 1 .733);
+    --ml1-standardHeight: 258.125px;
 }

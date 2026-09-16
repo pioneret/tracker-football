@@ -1,12 +1,10 @@
-import styles from "./ad-boards-section.module.css"
+import styles from "../ui/ad-boards-section.module.css"
+import { useContext } from "react"
 import { MltsContext } from "../context/mlts-context"
 import classnames from "classnames"
-import { useContext } from "react"
-import * as React from "react"
 
 export default function AdBoardsSection() {
     const { adBoardsAnimation } = useContext(MltsContext)
-
     return (
         <div className={styles["ml1-AdBoardsSection"]}>
             <div className={styles["ml1-AdBoardsSection_LeftBoard"]}>

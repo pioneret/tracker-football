@@ -1,5 +1,5 @@
 import { MltsContext } from "../context/mlts-context"
-import styles from "./score-update.module.css"
+import styles from "../ui/score-update.module.css"
 import { useContext, useEffect, useState } from "react"
 import classnames from "classnames"
 

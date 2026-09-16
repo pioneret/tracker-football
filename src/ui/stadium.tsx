@@ -1,14 +1,14 @@
-import styles from "./stadium.module.css"
+import styles from "../ui/stadium.module.css"
 import classnames from "classnames"
 import { useContext } from "react"
 import { MltsContext } from "../context/mlts-context"
 import { ColorUtils } from "../lib/color-utils"
 
-// declare module "react" {
-//     interface CSSProperties {
-//         [key: `--${string}`]: string | number
-//     }
-// }
+declare module "react" {
+    interface CSSProperties {
+        [key: `--${string}`]: string | number
+    }
+}
 
 export default function Stadium() {
     const { teamsColors } = useContext(MltsContext)

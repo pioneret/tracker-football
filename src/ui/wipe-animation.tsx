@@ -1,4 +1,4 @@
-import styles from "./wipe-animation.module.css"
+import styles from "../ui/wipe-animation.module.css"
 import classnames from "classnames"
 import { MltsContext } from "../context/mlts-context"
 import { useContext } from "react"

@@ -1,4 +1,4 @@
-import styles from "./goal-post.module.css"
+import styles from "../ui/goal-post.module.css"
 import classnames from "classnames"
 import { ComponentProps } from "react"
 

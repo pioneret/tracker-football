@@ -23,7 +23,7 @@
 }
 
 .ml1-GoalPost_BackNet {
-    background: hsla(0, 0%, 100%, 0.2);
+    background: hsla(0,0%,100%,.2);;
     transform-style: preserve-3d;
     position: absolute;
     width: 100%;
@@ -35,13 +35,13 @@
 }
 
 .ml1-GoalPost-away .ml1-GoalPost_BackNet {
-    left: 0;
-    transform-origin: left top;
-    transform: translateZ(12px);
-}
+     left: 0;
+     transform-origin: left top;
+     transform: translateZ(12px);
+ }
 
 .ml1-GoalPost_FarSideNet {
-    background: hsla(0, 0%, 100%, 0.2);
+    background: hsla(0,0%,100%,.2);;
     position: absolute;
     width: 100%;
     height: 33%;
@@ -55,14 +55,14 @@
     bottom: 0;
     transform: rotateX(-90deg);
     transform-origin: left bottom;
-    background: hsla(0, 0%, 100%, 0.2);
+    background: hsla(0,0%,100%,.2);;
     position: absolute;
     width: 100%;
     height: 33%;
 }
 
 .ml1-GoalPost_TopNet {
-    background: hsla(0, 0%, 100%, 0.2);
+    background: hsla(0,0%,100%,.2);;
     transform-style: preserve-3d;
     position: absolute;
     width: 77%;

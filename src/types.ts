@@ -1,11 +1,3 @@
-import "react"
-
-declare module "react" {
-    interface CSSProperties {
-        [key: `--${string}`]: string | number
-    }
-}
-
 export type MltsPropsWithChildrenType = {
     children: React.ReactNode
     mltsProps: MltsPropsType
@@ -17,6 +9,8 @@ export type MltsPropsType = {
     ballPositionProps: CoordinateType | null
     matchStatusProps: MatchStatusType
     currentScoreProp: CurrentScorePropType
+    injuryTimeProp: string | null
+    clockTimeProp: string | null
 }
 
 export type CurrentScorePropType = string | null
@@ -69,6 +63,10 @@ export type MatchStatusType =
     | "A_RED_CARD"
     | "H_PENALTY"
     | "A_PENALTY"
+    | "H_PENALTY_M"
+    | "A_PENALTY_M"
+    | "H_KICK_OFF"
+    | "A_KICK_OFF"
 
 export type TeamsColorType = {
     home: string
@@ -87,10 +85,16 @@ export type MltsStateType = {
     coneStatus: ConeStatusType
     ballOnTargetStatus: BallOnTargetStatusType
     pitchBlobRef: React.RefObject<HTMLDivElement | null>
+    eventInfoRef: React.RefObject<HTMLDivElement | null>
+    pitchSvgRef: React.RefObject<SVGSVGElement | null>
     soccerPath: SoccerPathType
     eventCard: EventCardType | null
+    eventInfo: EventInfoType | null
     wipeAnimation: WipeAnimationType | null
     adBoardsAnimation: AdBoardsAnimationType
+    injuryTime: string | null
+    clockTime: string | null
+    isEventInfoFixed: boolean
 }
 export type AdBoardsAnimationType = {
     isEvent: boolean
@@ -135,6 +139,18 @@ export type EventCardType = {
     iconContainerStyle?: React.CSSProperties
     iconStyle?: React.CSSProperties
     showThreeDots?: boolean
+}
+
+export type EventInfoType = {
+    title: string
+    subTitle: string
+    stack: "vertical" | "horizontal"
+    direction: "left" | "right"
+    color: string
+    positionStyle: React.CSSProperties
+    hiddeBar?: boolean
+    horizontalBar?: boolean
+    baseTitleColor?: true
 }
 
 export type SoccerPathType = {

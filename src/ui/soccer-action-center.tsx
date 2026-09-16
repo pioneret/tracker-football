@@ -1,7 +1,7 @@
-import styles from "./soccer-action-center.module.css"
-import AdBoardsSection from "./ad-boards-section"
-import Stadium from "./stadium"
-import Pitch from "./pitch"
+import styles from "../ui/soccer-action-center.module.css"
+import AdBoardsSection from "../ui/ad-boards-section"
+import Stadium from "../ui/stadium"
+import Pitch from "../ui/pitch"
 import { MltsContext } from "../context/mlts-context"
 import { useContext } from "react"
 

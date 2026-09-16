@@ -1,5 +1,5 @@
 import { MltsContext } from "../context/mlts-context"
-import styles from "./event-card-container.module.css"
+import styles from "../ui/event-card-container.module.css"
 import classnames from "classnames"
 import React from "react"
 

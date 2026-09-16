@@ -1,4 +1,4 @@
-import styles from "./pitch-cone.module.css"
+import styles from "../ui/pitch-cone.module.css"
 import { ConeStatusType } from "../types"
 import React from "react"
 

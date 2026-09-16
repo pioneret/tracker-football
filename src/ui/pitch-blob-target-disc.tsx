@@ -1,5 +1,5 @@
 import { MltsContext } from "../context/mlts-context"
-import styles from "./pitch-blob-target-disc.module.css"
+import styles from "../ui/pitch-blob-target-disc.module.css"
 import classNames from "classnames"
 import React from "react"
 

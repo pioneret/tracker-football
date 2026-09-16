@@ -1,8 +1,7 @@
 "use client"
-
-import { MltsContext } from "../../context/mlts-context"
-import styles from "./score-board.module.css"
+import styles from "../ui/score-board-ui/score-board.module.css"
 import React from "react"
+import { MltsContext } from "../../context/mlts-context"
 
 export default function ScoreBoard() {
     const { teamsName, teamsColors, currentScore } =

@@ -13,14 +13,8 @@
     flex: 0 0 auto;
 }
 
-.ml1-MatchLiveSoccerModule_DistortedContent {
-    transform: scale(var(--ml1-scale, 1)) rotateX(var(--ml1-sceneXRotation))
-        rotateY(var(--ml1-sceneYRotation)) rotate(var(--ml1-sceneZRotation))
-        translate3d(
-            var(--ml1-sceneXTranslate),
-            var(--ml1-sceneYTranslate),
-            var(--ml1-sceneZTranslate, 0)
-        );
+.ml1-MatchLiveSoccerModule_DistortedContent{
+    transform: scale(var(--ml1-scale,1)) rotateX(var(--ml1-sceneXRotation)) rotateY(var(--ml1-sceneYRotation)) rotate(var(--ml1-sceneZRotation)) translate3d(var(--ml1-sceneXTranslate),var(--ml1-sceneYTranslate),var(--ml1-sceneZTranslate,0));
     transition: transform 3s ease 0s;
     transform-style: preserve-3d;
     position: absolute;

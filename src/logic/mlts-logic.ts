@@ -1,3 +1,14 @@
+import {
+    ActiveTeamType,
+    ConeStatusType,
+    CoordinateType,
+    EventCardType,
+    EventInfoType,
+    MltsPropsType,
+    MltsStateType,
+    SoccerPathType,
+    TeamsNameType,
+} from "../types"
 import { TeamColorsUtils } from "../lib/team-colors-utils"
 import { BallPositionUtils } from "../lib/ball-position-utils"
 import { CameraUtils } from "../lib/camera-utils"
@@ -8,15 +19,7 @@ import { SoccerPathUtils } from "../lib/soccer-path-utlils"
 import { EventCardUtils } from "../lib/event-card-utils"
 import { WipeAnimationUtils } from "../lib/wipe-animation-utils"
 import { AdBoardsAnimationUtils } from "../lib/ad-boards-animation-utils"
-import {
-    ActiveTeamType,
-    ConeStatusType,
-    CoordinateType,
-    EventCardType,
-    MltsPropsType,
-    MltsStateType,
-    SoccerPathType,
-} from "../types"
+import { EventInfoUtils } from "../lib/event-info-utils"
 
 export const DEFAULT_MLTS_STATE: MltsStateType = {
     teamsName: {
@@ -61,15 +64,25 @@ export const DEFAULT_MLTS_STATE: MltsStateType = {
     pitchBlobRef: {
         current: null,
     },
+    pitchSvgRef: {
+        current: null,
+    },
+    eventInfoRef: {
+        current: null,
+    },
     soccerPath: {
         points: "",
         type: null,
     },
     eventCard: null,
+    eventInfo: null,
     wipeAnimation: null,
     adBoardsAnimation: {
         isEvent: false,
     },
+    injuryTime: null,
+    clockTime: null,
+    isEventInfoFixed: false,
 }
 
 export const BALL_POSITION_UNPROVIDED: Record<string, CoordinateType> = {
@@ -87,6 +100,9 @@ export const BALL_POSITION_UNPROVIDED: Record<string, CoordinateType> = {
     H_FK_D: { x: 0.75, y: 0.85 },
     A_FK_U: { x: 0.25, y: 0.15 },
     A_FK_D: { x: 0.25, y: 0.85 },
+    // Kick Off
+    H_KICK_OFF: { x: 0.5, y: 0.5 },
+    A_KICK_OFF: { x: 0.5, y: 0.5 },
 }
 
 const BALL_POSITION_PROVIDED_FROM_STATUS: Record<string, CoordinateType> = {
@@ -140,14 +156,22 @@ const DEFAULT_TEAM_BALL_POSITION_STATE: Record<string, CoordinateType> = {
 
 export const getMltsCurrentState = (
     mltsProviderProps: MltsPropsType,
-    mltsCurrentState: Omit<MltsStateType, "pitchBlobRef">,
+    mltsCurrentState: Omit<
+        MltsStateType,
+        "pitchBlobRef" | "pitchSvgRef" | "eventInfoRef" | "isEventInfoFixed"
+    >,
     pitchBlobRef: HTMLElement | null,
-): Omit<MltsStateType, "pitchBlobRef"> => {
+): Omit<
+    MltsStateType,
+    "pitchBlobRef" | "pitchSvgRef" | "eventInfoRef" | "isEventInfoFixed"
+> => {
     const {
         teamsColorProps,
         currentScoreProp,
         ballPositionProps,
         matchStatusProps,
+        injuryTimeProp,
+        clockTimeProp,
     } = mltsProviderProps
 
     const teamsName =
@@ -273,6 +297,12 @@ export const getMltsCurrentState = (
         teamsName,
         teamsColor,
     )
+    const eventInfo: EventInfoType | null = EventInfoUtils.retrieve(
+        matchStatusProps,
+        teamsName,
+        teamsColor,
+        ballPosition,
+    )
 
     return {
         teamsName,
@@ -287,6 +317,7 @@ export const getMltsCurrentState = (
         ballOnTargetStatus,
         soccerPath,
         eventCard,
+        eventInfo,
         wipeAnimation: WipeAnimationUtils.retrieve(
             matchStatusProps,
             teamsName,
@@ -297,5 +328,7 @@ export const getMltsCurrentState = (
             teamsName,
             teamsColor,
         ),
+        injuryTime: injuryTimeProp,
+        clockTime: clockTimeProp,
     }
 }

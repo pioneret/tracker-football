@@ -1,9 +1,9 @@
-import goalPostStyles from "./goal-post.module.css"
-import PitchDynamicSvg from "./pitch-dynamic-svg"
-import styles from "./pitch.module.css"
-import GoalPost from "./goal-post"
-import PitchBlob from "./pitch-blob"
-import PitchCone from "./pitch-cone"
+import goalPostStyles from "../ui/goal-post.module.css"
+import PitchDynamicSvg from "../ui/pitch-dynamic-svg"
+import styles from "../ui/pitch.module.css"
+import GoalPost from "../ui/goal-post"
+import PitchBlob from "../ui/pitch-blob"
+import PitchCone from "../ui/pitch-cone"
 
 export default function Pitch() {
     return (

@@ -1,5 +1,5 @@
 import { MltsContext } from "../context/mlts-context"
-import styles from "./pitch-blob-player-acting.module.css"
+import styles from "../ui/pitch-blob-player-acting.module.css"
 import React from "react"
 
 export default function PitchBlobPlayerActing() {

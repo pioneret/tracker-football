@@ -6,3 +6,50 @@
     z-index: 20;
     margin-top: 2px;
 }
+
+
+.ml1-SoccerClock_Timer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 2px;
+    font-size: 11px;
+    line-height: 13px;
+    height: 20px;
+    min-width: 57px;
+    font-weight: 600;
+    padding: 0 13px;
+    border-radius: 2px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 41;
+    transform: translateX(-50%);
+    background-color: var(--color-grey00-60p);
+    color: var(--color-green28FFBB);
+}
+
+.ml1-SoccerClock_TimerInnerWrapper  {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 600;
+    color: var(--color-green28FFBB);
+}
+
+.ml1-SoccerClock_InjuryTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 13px;
+    min-width: 57px;
+    height: 20px;
+    font-weight: 600;
+    margin-left: 2px;
+    background-color: var(--color-grey00-60p);
+    color: var(--color-green28FFBB);
+    border-radius: 2px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    white-space: nowrap;
+}

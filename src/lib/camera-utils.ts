@@ -60,4 +60,30 @@ export const CameraUtils = {
             rotateX: -defaultVertical / 5,
         }
     },
+
+    setPitchHeight: function (elementWidth: number, breakpoint: number) {
+        const MAX_WIDTH = 450
+        const ASPECT_RATIO = 0.5625
+        const MIN_HEIGHT = 225
+        const NARROW = 360
+        const MEDIUM = 375
+
+        let padding = 10
+
+        if (breakpoint <= NARROW) {
+            padding = 5
+        }
+
+        let calculatedWidth = elementWidth - 2 * padding
+
+        if (breakpoint <= MEDIUM && breakpoint > NARROW) {
+            calculatedWidth = elementWidth / 2 - 2 * padding
+        }
+
+        calculatedWidth = Math.min(MAX_WIDTH, calculatedWidth)
+
+        let calculatedHeight = ASPECT_RATIO * calculatedWidth + padding
+
+        return Math.max(calculatedHeight, MIN_HEIGHT)
+    },
 }

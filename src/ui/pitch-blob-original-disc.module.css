@@ -6,9 +6,10 @@
     margin-left: -5px;
     margin-top: -5px;
     border-radius: 50%;
-    transition: opacity 0.2s;
+    transition: opacity .2s;
     transform-origin: center;
 }
+
 
 @keyframes XYBlobSpinOriginDisc {
     0% {
@@ -20,7 +21,6 @@
     }
 }
 
-.ml1-XYBlob-pulse {
-    animation: XYBlobSpinOriginDisc 1s forwards
-        cubic-bezier(0.5, 0.25, 0.5, 0.75);
+.ml1-XYBlob-pulse{
+    animation: XYBlobSpinOriginDisc 1s forwards cubic-bezier(.5,.25,.5,.75);
 }
