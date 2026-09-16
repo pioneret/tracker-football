@@ -88,8 +88,14 @@ const MltsProvider = ({ mltsProps, children }: MltsPropsWithChildrenType) => {
         if (elm && eventInfoRef.current) {
             const topOffset = elm.getBoundingClientRect().top
             const height = elm.getBoundingClientRect().height
+            const rootStyles = window.getComputedStyle(document.documentElement)
+            const scrollToEventPx = rootStyles
+                .getPropertyValue("--ml1-scroll-to-event")
+                .trim()
+            const scrollToEvent = Number(scrollToEventPx.replace("px", ""))
+
             setIsEventInfoFixed(
-                -1 * (topOffset - 90) >
+                -1 * (topOffset - scrollToEvent) >
                     height -
                         eventInfoRef.current.getBoundingClientRect().height,
             )
