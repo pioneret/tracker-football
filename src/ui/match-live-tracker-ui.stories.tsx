@@ -56,6 +56,7 @@ type StoryArgs = {
     currentScore: string
     injuryTime: string
     clockTime: string
+    player: string
 }
 
 const toProps = (args: StoryArgs): MltsPropsType => ({
@@ -66,6 +67,7 @@ const toProps = (args: StoryArgs): MltsPropsType => ({
     currentScoreProp: args.currentScore || null,
     injuryTimeProp: args.injuryTime || null,
     clockTimeProp: args.clockTime || null,
+    playerNameProp: args.player || null,
 })
 
 const Tracker = (args: StoryArgs) => (
@@ -98,13 +100,13 @@ const meta = {
         currentScore: "0-0",
         injuryTime: "",
         clockTime: "12:34",
+        player: "Agim",
     },
 } satisfies Meta<typeof Tracker>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-/** Drive every prop by hand from the Controls panel. */
 export const Playground: Story = {}
 
 /** A scripted feed that ticks every 2s, the way a live match would. */

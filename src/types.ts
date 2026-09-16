@@ -11,6 +11,7 @@ export type MltsPropsType = {
     currentScoreProp: CurrentScorePropType
     injuryTimeProp: string | null
     clockTimeProp: string | null
+    playerNameProp: string | null
 }
 
 export type CurrentScorePropType = string | null
@@ -94,6 +95,8 @@ export type MltsStateType = {
     adBoardsAnimation: AdBoardsAnimationType
     injuryTime: string | null
     clockTime: string | null
+    // player on the ball, when the feed names one
+    playerName: string | null
     isEventInfoFixed: boolean
 }
 export type AdBoardsAnimationType = {

@@ -38,6 +38,7 @@ const MltsProvider = ({ mltsProps, children }: MltsPropsWithChildrenType) => {
         mltsProps.injuryTimeProp,
         mltsProps.clockTimeProp,
         mltsProps.teamsNameProp,
+        mltsProps.playerNameProp,
     ])
 
     mltsCurrentStateRef.current = mltsCurrentState

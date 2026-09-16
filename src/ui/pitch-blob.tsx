@@ -23,7 +23,7 @@ export default function PitchBlob() {
             <PitchBlobTargetDisc />
             <PitchBlobBall />
             {/*<PitchBlobPlayerReceiving />*/}
-            {/*<PitchBlobPlayerActing />*/}
+            <PitchBlobPlayerActing />
             <PitchBlobGoalLine />
         </div>
     )

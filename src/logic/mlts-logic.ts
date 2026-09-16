@@ -82,6 +82,7 @@ export const DEFAULT_MLTS_STATE: MltsStateType = {
     },
     injuryTime: null,
     clockTime: null,
+    playerName: null,
     isEventInfoFixed: false,
 }
 
@@ -172,6 +173,7 @@ export const getMltsCurrentState = (
         matchStatusProps,
         injuryTimeProp,
         clockTimeProp,
+        playerNameProp,
     } = mltsProviderProps
 
     const teamsName =
@@ -330,5 +332,6 @@ export const getMltsCurrentState = (
         ),
         injuryTime: injuryTimeProp,
         clockTime: clockTimeProp,
+        playerName: playerNameProp,
     }
 }

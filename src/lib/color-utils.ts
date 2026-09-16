@@ -120,6 +120,28 @@ export const ColorUtils = {
             return 0
         }
     },
+    /**
+     * Relative luminance per WCAG, used to decide what reads on top of a colour.
+     */
+    Luminance: function (hex: string) {
+        const rgb = this.HexToRGB(hex) ?? [0, 0, 0]
+
+        const [r, g, b] = rgb.map((channel) => {
+            const c = channel / 255
+            return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4)
+        })
+
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b
+    },
+
+    /**
+     * Black or white, whichever stays legible on the given background: white on
+     * a dark kit colour, black on a light one.
+     */
+    ContrastText: function (hex: string) {
+        return this.Luminance(hex) > 0.179 ? "#000" : "#fff"
+    },
+
     GetSaturation: function (hex: string) {
         const rgb = this.HexToRGB(hex)
         if (rgb) {
